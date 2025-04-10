@@ -98,9 +98,21 @@ describe('Hoch Technology', () => {
     cy.get('.accordion > .navbar-collapse > .navigation > :nth-child(3) > a').click() // Click on  Services 
     cy.wait(500);
     cy.get(':nth-child(3) > .work-process-item').trigger('mouseover');
-    cy.get('.mfp-iframe > .fas').click()
+    cy.get('.mfp-iframe > .fas').click() // Youtube Video Play
     cy.wait(20000);
-    cy.get('.mfp-close').click()
+    cy.get('.mfp-close').click() // Close video
+    cy.get(':nth-child(2) > .service-two-item > .content > h4 > a').click() // Latest Services
+    cy.get('.accordion > .navbar-collapse > .navigation > :nth-child(3) > a').click() // Click on  Services 
+    cy.get(':nth-child(3) > .service-two-item > .content > h4 > a').click() // Latest Services
+    cy.get('.accordion > .navbar-collapse > .navigation > :nth-child(3) > a').click() // Click on  Services 
+    cy.get(':nth-child(4) > .service-two-item > .content > h4 > a').click() // Latest Services
+    cy.get('.accordion > .navbar-collapse > .navigation > :nth-child(3) > a').click() // Click on  Services 
+    cy.get(':nth-child(5) > .service-two-item > .content > h4 > a').click() // Latest Services
+    cy.get('.accordion > .navbar-collapse > .navigation > :nth-child(3) > a').click() // Click on  Services 
+    
+
+
+
 
 
 
