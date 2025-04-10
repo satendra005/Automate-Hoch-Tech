@@ -109,8 +109,12 @@ describe('Hoch Technology', () => {
     cy.get('.accordion > .navbar-collapse > .navigation > :nth-child(3) > a').click() // Click on  Services 
     cy.get(':nth-child(5) > .service-two-item > .content > h4 > a').click() // Latest Services
     cy.get('.accordion > .navbar-collapse > .navigation > :nth-child(3) > a').click() // Click on  Services 
-    
+    cy.get('#email').type('satendrarajbhar45@gmail.com'); // Subscribe button 
+    cy.get('form > button').click() // Click Subscribe Button. 
+    cy.wait(5000);  
+    cy.get('.swal2-confirm').click() //  "Ok" button on popup
 
+    
 
 
 
