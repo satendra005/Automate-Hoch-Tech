@@ -1,11 +1,9 @@
 describe('Hoch Technology', () => {
   it('hoch technology', () => {
     cy.visit('https://www.hochtechnology.com/'); 
-
     cy.contains('IT Solution Comapny').should('be.visible');
     cy.get('.accordion > .navbar-collapse > .navigation > :nth-child(1) > .navbar-active').click()
     cy.get(':nth-child(1) > .feature-item > h5 > a').click() // click on Business Development
-    // cy.scrollTo(0, 5000);
     cy.get('.widget > .theme-btn > .fas').click()
     cy.get('.breadcrumb > :nth-child(1) > a').click() // Back to home 
     cy.get(':nth-child(2) > .feature-item > h5 > a').click() // click on Website Development
